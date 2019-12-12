@@ -1,0 +1,60 @@
+/*FONTS*/
+/*COLORS*/
+/*BG-COLOR-CLASSES*/
+.bg-orange {
+  background: #ff8761; }
+
+.bg-blue {
+  background: #57bdde; }
+
+.bg-purple {
+  background: #b198dc; }
+
+.bg-green {
+  background: #6dc7be; }
+
+.side {
+  display: flex;
+  justify-content: center;
+  width: 33.33333%;
+  height: 100%; }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 66.66667%;
+  height: 100%; }
+  .content .title,
+  .content .number {
+    font-size: 0.875rem;
+    font-family: 'MuseoSans';
+    text-transform: uppercase; }
+  .content .title {
+    margin-top: 30px; }
+  .content .number {
+    margin-bottom: 30px; }
+
+.prod-visit {
+  font-size: 25px;
+  font-family: 'MuseoSans';
+  color: #2f3b4c; }
+
+.content .number,
+.content .title {
+  font-size: 1.3125rem;
+  font-family: 'MuseoSans';
+  font-weight: 500; }
+
+.title-sales {
+  color: #ff8761; }
+
+.title-quote {
+  color: #57bdde; }
+
+.title-orders {
+  color: #b198dc; }
+
+.title-products {
+  color: #6dc7be; }

@@ -1,0 +1,62 @@
+@import 'variables';
+
+.side {
+  display: flex;
+  justify-content: center;
+  width: percentage(1 / 3);
+  height: 100%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: percentage(2 / 3);
+  height: 100%;
+
+  .title,
+  .number {
+    font-size: $font-14;
+    font-family: 'MuseoSans';
+    text-transform: uppercase;
+  }
+
+  .title {
+    margin-top: 30px;
+  }
+
+  .number {
+    margin-bottom: 30px;
+  }
+}
+
+.prod-visit {
+  font-size: 25px;
+  font-family: 'MuseoSans';
+  color: rgb(47, 59, 76);
+}
+
+.content {
+  .number,
+  .title {
+    font-size: $font-21;
+    font-family: 'MuseoSans';
+    font-weight: 500;
+  }
+}
+
+.title-sales{
+  color: $orange-color;
+}
+
+.title-quote{
+  color: $blue-color;
+}
+
+.title-orders{
+  color: $purple-color;
+}
+
+.title-products{
+  color: $green-color;
+}

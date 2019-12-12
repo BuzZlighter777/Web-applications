@@ -1,0 +1,12 @@
+.stats {
+  flex-direction: column;
+  margin-left: 11px;
+  width: calc(25% - 11px); }
+
+.week-stats {
+  margin-bottom: 22px; }
+
+.week-stats, .total-stats {
+  background: #fff;
+  width: 100%;
+  height: 50%; }

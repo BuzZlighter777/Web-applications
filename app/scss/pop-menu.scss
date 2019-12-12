@@ -1,0 +1,157 @@
+@import "variables";
+
+#pop-menu {
+  background: $darkblue-color;
+  width: 350px;
+}
+  
+.pop-menu__header {
+  display: flex;
+  background: #00bfe8;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+
+  img {
+    margin-left: 40px;
+    margin-right: 1.5rem;
+    background: #000;
+  }
+
+  p {
+    font-size: 2.5rem;
+    font-family: 'Lobster', cursive;
+    color: #0083a9;
+    text-align: center;
+  }
+}
+  
+.pop-menu__profile {
+  display: flex;
+  width: 100%;
+  height: 130px;
+  align-items: center;
+  font-family: 'MuseoSansRounded';
+  background: $darkblue-color;
+}
+  
+.avatar-box {
+  position: relative;
+  height: 64px;
+  border-radius: 50%;
+  margin-left: 35px;
+
+  /* online status icon */
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border: 3px solid $darkblue-color;
+    right: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #33de80;
+  }
+}
+  
+.avatar-info-box {
+  margin-left: 20px;
+
+  .name {
+    font-size: $font-25;
+    color: #fff;
+  }
+
+  .location {
+    font-size: $font-16;
+    color: #b0bec5;
+  }
+}
+  
+.pop-menu__categories,
+.pop-menu__settings {
+  color: #b0bec5;
+  font-size: $font-16;
+  font-family: 'MuseoSans';
+}
+  
+#pop-menu ul > li {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  transition: background-color 0.45s;
+}
+  
+.msg::after{
+  content: '32';
+  display: block;
+  color: white;
+  text-align: center;
+  padding-top: 3px;
+  font-size: $font-14;
+  width: 40px;
+  height: 20px;
+  margin-left: 1rem;
+  border-radius: 20px;
+  background: #00bfe8;
+}
+  
+  .pop-menu__categories {
+    ul{
+      li{
+        div {
+          display: flex;
+          position: relative;
+          align-items: center;
+          width: 30px;
+          height: 100%;
+          margin-left: 30px;
+          margin-right: 10px;
+      
+          img {
+            position: absolute;
+          }
+        }
+
+        &:before {
+          content: '';
+          display: block;
+          width: 4px;
+          height: 100%;
+          background: #00bfe8;
+          opacity: 0;
+          transition: opacity 0.45s;
+        }
+
+        &:hover {
+          background-color: #2a3344;
+        }
+
+        &:hover::before {
+          opacity: 100;
+        }
+      }
+    } 
+
+    /* separation line */
+    &:after {
+      content: '';
+      display: block;
+      width: 255px;
+      height: 1px;
+      margin: 20px auto;
+      background: #555f72;
+    }
+}
+  
+.pop-menu__settings > ul > li {
+  padding-left: 30px;
+  &:hover {
+    background-color: #2a3344;
+  }
+}
+  
+  
+  

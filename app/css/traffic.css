@@ -1,0 +1,130 @@
+/*FONTS*/
+/*COLORS*/
+/*BG-COLOR-CLASSES*/
+.bg-orange {
+  background: #ff8761; }
+
+.bg-blue {
+  background: #57bdde; }
+
+.bg-purple {
+  background: #b198dc; }
+
+.bg-green {
+  background: #6dc7be; }
+
+.sales,
+.charge {
+  position: relative;
+  background-size: cover;
+  justify-content: center; }
+
+.sales::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #b198dc;
+  border: 5px solid #e7e0f4;
+  top: 68%;
+  left: 65%; }
+
+.charge::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #6dc7be;
+  border: 5px solid #cdedea;
+  top: 65%;
+  left: 25%; }
+
+.charge {
+  background-image: url(../images/traffic-img/stats-chart.png); }
+
+.sales {
+  background-image: url(../images/traffic-img/sales-chart.png); }
+
+.chart-title {
+  font-size: 1.3125rem;
+  font-weight: 600;
+  color: #78909c; }
+
+.traffic-caption {
+  font-size: 1.5625rem;
+  font-family: 'MuseoSans';
+  color: #2f3b4c; }
+
+.traffic-text p {
+  font-size: 1rem;
+  font-family: 'MuseoSans';
+  color: #78909c;
+  text-align: center; }
+
+.pie-cont {
+  position: relative; }
+  .pie-cont .registered {
+    position: absolute;
+    width: 25%;
+    left: calc(50% - 12.5%);
+    top: 43%;
+    border-radius: 50%; }
+    .pie-cont .registered .title {
+      font-size: 1.3125rem;
+      color: #57bdde; }
+    .pie-cont .registered .number {
+      font-size: 1.3125rem; }
+
+.info-bg {
+  position: relative;
+  background-image: url(../images/traffic-img/shore.jpg);
+  background-size: cover;
+  height: 33.33333%; }
+  .info-bg .info-avatar {
+    background-image: url(../images/pop-menu-img/avatar.png);
+    background-size: cover;
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    left: calc(50% - 50px);
+    top: calc(100% - 50px); }
+  .info-bg .name,
+  .info-bg .bio {
+    font-family: 'MuseoSans';
+    color: white;
+    text-align: center; }
+  .info-bg .name {
+    font-size: 1.5625rem; }
+  .info-bg .bio {
+    font-size: 1.3125rem; }
+
+.info-text {
+  padding-top: 80px; }
+  .info-text .text-desc {
+    font-size: 1rem;
+    text-align: justify;
+    font-family: 'MuseoSans';
+    color: #78909c; }
+
+.text-stats p {
+  text-align: center;
+  font-family: 'MuseoSans'; }
+
+.text-stats .number {
+  font-size: 33px; }
+
+.text-stats .category {
+  font-size: 1.3125rem;
+  color: #78909c; }
+
+.text-stats:nth-child(2) {
+  border-right: 1px solid #78909c;
+  border-left: 1px solid #78909c; }

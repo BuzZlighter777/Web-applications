@@ -1,0 +1,25 @@
+.wrapper {
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #fff;
+  }
+  
+  #header-button {
+      display: flex;
+      align-items: center;
+  }
+  
+  .play-btn{
+      margin-right: 3px;
+      align-self: center;
+  }
+  
+  #header-button, .header-settings{
+      margin-right: 30px;
+  }
+  
+  

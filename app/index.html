@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- My css files -->
+    <link rel="stylesheet" href="./css/import.css" />
+    <title>Lab-1</title>
+  </head>
+  <body>
+    <!-- 1304 x 1385 px -->
+
+    <div class="d-flex">
+      <div id="pop-menu">
+        <div class="pop-menu__header">
+          <img src="./images/pop-menu-img/Head icon.svg" alt="Head icon" />
+          <p>Smart</p>
+        </div>
+        <div class="pop-menu__profile">
+          <div class="avatar-box">
+            <img src="./images/pop-menu-img/avatar.png" alt="avatar" />
+          </div>
+          <div class="avatar-info-box">
+            <p class="name">Ononto Jolil</p>
+            <p class="location">Jolilpur Mars</p>
+          </div>
+        </div>
+        <div class="pop-menu__categories">
+          <ul>
+            <li>
+              <div>
+                <img src="./images/pop-menu-img/Dasboard.svg" alt="error" />
+              </div>
+              Dashboard
+            </li>
+            <li class="msg">
+              <div>
+                <img src="./images/pop-menu-img/Message.svg" alt="error" />
+              </div>
+              Messages
+            </li>
+            <li>
+              <div>
+                <img src="./images/pop-menu-img/UI elements.svg" alt="error" />
+              </div>
+              UI elements
+            </li>
+            <li>
+              <div>
+                <img src="./images/pop-menu-img/Charts.svg" alt="error" />
+              </div>
+              Charts
+            </li>
+            <li>
+              <div>
+                <img src="./images/pop-menu-img/Calendar.svg" alt="error" />
+              </div>
+              Calendar
+            </li>
+          </ul>
+        </div>
+        <div class="pop-menu__settings">
+          <ul>
+            <li>User</li>
+            <li>Security</li>
+            <li>Customers</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main-content" id="main-content">
+        <header>
+          <div class="wrapper d-flex">
+            <div class="d-flex">
+              <div id="header-button">
+                <img
+                  class="play-btn"
+                  src="./images/header-svg/Music Player Play.svg"
+                  alt=""
+                />
+                <img src="./images/header-svg/menu-button.svg" alt="" />
+              </div>
+              <div class="header-search">
+                <img src="./images/header-svg/search.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="d-flex">
+              <div class="header-settings">
+                <img src="./images/header-svg/settings.svg" alt="" />
+              </div>
+              <div class="header-log-out">
+                <img src="./images/header-svg/log out.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <main class="p-4">
+          <section class="section1">
+            <div class="row w-100 mb-4 no-gutters">
+              <div class="col bg-white d-flex mr-2 ml-0">
+                <div class="side bg-orange">
+                  <img src="./images/overview-svg/Banknote.svg" alt="" />
+                </div>
+                <div class="content">
+                  <p class="title title-sales">Total Sales</p>
+                  <p class="number">$215,645</p>
+                </div>
+              </div>
+              <div class="col bg-white d-flex mx-2">
+                <div class="side bg-blue">
+                  <img
+                    src="./images/overview-svg/Document Page With Text Lines.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <p class="title title-quote">New quote</p>
+                  <p class="number">$523,543</p>
+                </div>
+              </div>
+              <div class="col bg-white d-flex mx-2">
+                <div class="side bg-purple">
+                  <img src="./images/overview-svg/Database.svg" alt="" />
+                </div>
+                <div class="content">
+                  <p class="title title-orders">Orders</p>
+                  <p class="number">$23,414</p>
+                </div>
+              </div>
+              <div class="col bg-white d-flex mr-0 ml-2">
+                <div class="side bg-green">
+                  <img
+                    src="./images/overview-svg/Cube Variant With Shadow.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <p class="title title-products">Products</p>
+                  <p class="number">$19,087</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section2 w-100 mb-3">
+            <div class="row m-0 mb-4">
+              <div class="col-9 pl-0">
+                <div class="cont bg-white p-4">
+                  <p class="prod-visit">Product Visitors</p>
+                  <canvas id="prodVisitChart" class="m-0 p-0"></canvas>
+                </div>
+              </div>
+              <div class="col-3 pr-0">
+                <div class="cont h-100">
+                  <div class="cont-sales h-50 pb-2">
+                    <div class="sales h-100 d-flex pt-5">
+                      <p class="chart-title">Weekly Sales & Expense</p>
+                    </div>
+                  </div>
+                  <div class="cont-charge h-50 pt-2">
+                    <div class="charge h-100 d-flex pt-5">
+                      <p class="chart-title">Total Charge & Profit</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section3">
+            <div class="row mb-4">
+              <div class="col-6">
+                <div class="cont w-100 h-100 bg-white p-4">
+                  <div class="traffic-header d-flex justify-content-between">
+                    <p class="traffic-caption">Website traffic</p>
+                    <img
+                      src="./images/traffic-img/Refresh Page Arrow Button.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pie-cont pt-4">
+                    <canvas id="pieChart"></canvas>
+                    <div
+                    class="registered p-4 d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <p class="title">Registered</p>
+                    <p class="number">9012</p>
+                  </div>
+                  </div>
+                  <div class="traffic-text py-4">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Esse, voluptatibus assumenda dolorem facilis quasi ut,
+                      nihil totam temporibus atque officia cumque amet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="info bg-white h-100">
+                  <div class="info-bg w-100 py-5">
+                    <p class="name">Ononto Jolil</p>
+                    <p class="bio">Joker in Dhallywood</p>
+                    <div class="info-avatar"></div>
+                  </div>
+
+                  <div class="info-text px-4 mt-4">
+                    <p class="text-desc">
+                      "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ab doloribus explicabo, in nesciunt maiores laudantium
+                      maxime eaque mollitia enim quam reiciendis nemo ipsa sunt
+                      numquam, consequuntur similique sapiente."
+                    </p>
+                    <div class="row pt-5">
+                      <div class="col-4 text-stats">
+                        <p class="number">179</p>
+                        <p class="category">Customers</p>
+                      </div>
+                      <div class="col-4 text-stats">
+                        <p class="number">19K</p>
+                        <p class="category">Produsts</p>
+                      </div>
+                      <div class="col-4 text-stats">
+                        <p class="number">15K</p>
+                        <p class="category">Followers</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section4">
+            <ul class="list-group bg-white">
+              <li
+                class="list-group-item py-3 px-4 d-flex justify-content-between"
+              >
+                <div class="ratings">
+                  <p>Customer ratings</p>
+                </div>
+                <div class="votes d-flex align-items-center">
+                  <p class="votes-number">2,45,567$</p>
+                  <img
+                    src="./images/traffic-img/Refresh Page Arrow Button.svg"
+                    alt=""
+                  />
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row no-gutters">
+                  <div class="col-4">
+                    <div class="emoji">
+                      <img src="./images/ratings-svg/Happy.svg" alt="happy" />
+                    </div>
+                    <p>The product is Awesome</p>
+                  </div>
+                  <div class="col-7">
+                    <div class="rating-bar rating-bar-happy"></div>
+                  </div>
+                  <div class="col-1 d-flex justify-content-center">
+                    <p>67%</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row no-gutters">
+                  <div class="col-4">
+                    <div class="emoji">
+                      <img src="./images/ratings-svg/Smiley.svg" alt="smiley" />
+                    </div>
+                    <p>Yeah I'm Satisfied with it</p>
+                  </div>
+                  <div class="col-7">
+                    <div class="rating-bar rating-bar-smiley"></div>
+                  </div>
+                  <div class="col-1 d-flex justify-content-center">
+                    <p>25%</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row no-gutters">
+                  <div class="col-4">
+                    <div class="emoji">
+                      <img src="./images/ratings-svg/Sad.svg" alt="sad" />
+                    </div>
+                    <p>Average product, not bad</p>
+                  </div>
+                  <div class="col-7">
+                    <div class="rating-bar rating-bar-sad"></div>
+                  </div>
+                  <div class="col-1 d-flex justify-content-center">
+                    <p>7%</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row no-gutters">
+                  <div class="col-4">
+                    <div class="emoji">
+                      <img src="./images/ratings-svg/Angry.svg" alt="angry" />
+                    </div>
+                    <p>Not usefull at all it Sucks</p>
+                  </div>
+                  <div class="col-7">
+                    <div class="rating-bar rating-bar-angry"></div>
+                  </div>
+                  <div class="col-1 d-flex justify-content-center">
+                    <p>15%</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/visit-chart.js"></script>
+  </body>
+</html>

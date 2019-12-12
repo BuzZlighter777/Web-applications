@@ -1,0 +1,31 @@
+/*FONTS*/
+$font-14: 0.875rem;
+$font-16: 1rem;
+$font-18: 1.125rem;
+$font-21: 1.3125rem;
+$font-25: 1.5625rem;
+$font-29: 1.8125rem;
+
+/*COLORS*/
+$darkblue-color: #2f3b4c;
+$orange-color: #ff8761;
+$purple-color: #b198dc;
+$blue-color: #57bdde;
+$green-color: #6dc7be;
+
+/*BG-COLOR-CLASSES*/
+.bg-orange {
+  background: $orange-color;
+}
+
+.bg-blue {
+  background: $blue-color;
+}
+
+.bg-purple {
+  background: $purple-color;
+}
+
+.bg-green {
+  background: $green-color;
+}

@@ -1,0 +1,146 @@
+@import 'variables';
+
+.sales,
+.charge {
+  position: relative;
+  background-size: cover;
+  justify-content: center;
+}
+
+.sales::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #b198dc;
+  border: 5px solid #e7e0f4;
+  top: 68%;
+  left: 65%;
+}
+
+.charge::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #6dc7be;
+  border: 5px solid #cdedea;
+  top: 65%;
+  left: 25%;
+}
+
+.charge {
+  background-image: url(../images/traffic-img/stats-chart.png);
+}
+
+.sales {
+  background-image: url(../images/traffic-img/sales-chart.png);
+}
+
+.chart-title {
+  font-size: $font-21;
+  font-weight: 600;
+  color: #78909c;
+}
+
+.traffic-caption {
+  font-size: $font-25;
+  font-family: 'MuseoSans';
+  color: rgb(47, 59, 76);
+}
+
+.traffic-text {
+  p {
+    font-size: $font-16;
+    font-family: 'MuseoSans';
+    color: rgb(120, 144, 156);
+    text-align: center;
+  }
+}
+
+.pie-cont {
+  position: relative;
+  .registered {
+    position: absolute;
+    width: 25%;
+    left: calc(50% - 12.5%);
+    top: 43%;
+    border-radius: 50%;
+    .title {
+      font-size: $font-21;
+      color: $blue-color;
+    }
+    .number {
+      font-size: $font-21;
+    }
+  }
+}
+
+.info-bg {
+  position: relative;
+  background-image: url(../images/traffic-img/shore.jpg);
+  background-size: cover;
+  height: percentage(1 / 3);
+
+  .info-avatar {
+    background-image: url(../images/pop-menu-img/avatar.png);
+    background-size: cover;
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    left: calc(50% - 50px);
+    top: calc(100% - 50px);
+  }
+
+  .name,
+  .bio {
+    font-family: 'MuseoSans';
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+
+  .name {
+    font-size: $font-25;
+  }
+
+  .bio {
+    font-size: $font-21;
+  }
+}
+
+.info-text {
+  padding-top: 80px;
+  .text-desc {
+    font-size: $font-16;
+    text-align: justify;
+    font-family: 'MuseoSans';
+    color: rgb(120, 144, 156);
+  }
+}
+
+.text-stats {
+  p {
+    text-align: center;
+    font-family: 'MuseoSans';
+  }
+  .number {
+    font-size: 33px;
+  }
+  .category {
+    font-size: $font-21;
+    color: rgb(120, 144, 156);
+  }
+}
+
+.text-stats:nth-child(2) {
+  border-right: 1px solid rgb(120, 144, 156);
+  border-left: 1px solid rgb(120, 144, 156);
+}
